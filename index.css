@@ -1,1 +1,37 @@
-/* Le code CSS spécifique à la page d'accueil */
+/* Header */
+.headerContour{
+  border-radius: 50px;
+  background-color: #f2f2f7cc;
+}
+
+.btn{
+  background-color: blue;
+  padding: 5px;
+  border-radius: 40px;
+}
+
+/* Section Choisir Biny */
+
+.carte{
+    background-color: rgb(244, 244, 128);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.377);
+    height: 300px;
+    padding: 5px;
+    position: relative;
+}
+
+.carte::after{
+    content:"";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url('./assets/punaise.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top:-10px;
+    left: 50%;
+    
+
+}
+
+
