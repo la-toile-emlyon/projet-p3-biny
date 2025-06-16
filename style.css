@@ -1,4 +1,411 @@
+
+@import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
+
 html {
   height: 100%;
   width: 100%;
 }
+
+/* Reset */
+* {
+   margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  font-family: 'Euclid Circular B', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+
+/* ------ Flex ------ */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.spaceAround {
+    justify-content: space-around;
+}
+
+.spaceEvenly {
+    justify-content: space-evenly;
+}
+
+.flexStart {
+    justify-content: flex-start;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.TextRight{
+    text-align: right;
+}
+
+
+
+/* MARGIN/PADDING */
+
+
+.marginAuto{
+    margin: auto;
+}
+
+
+.marginRight{
+    margin-right: 50px;
+}
+
+.marginLeft{
+    margin-left: 12px;
+}
+
+.marginLeft50{
+    margin-left: 100px;
+}
+
+.marginBottom{
+    margin-top: 10px;
+}
+
+.top10{
+    margin-top: 10px;
+}
+
+.top20 {
+    margin-top: 20px;
+}
+
+.top60 {
+    margin-top: 60px;
+}
+
+.top40{
+    margin-top: 40px;
+}
+
+.top100 {
+    margin-top: 100px;
+
+}
+
+.ptb64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.padding5 {
+    padding: 5px;
+}
+
+.paddingTop{
+    padding-top: 10px;
+}
+
+.padding20 {
+    padding: 20px;
+}
+
+.padding2 {
+    padding: 2px;
+}
+
+/* WIDTH */
+
+.w5{
+    width: 5%;
+}
+
+.w15{
+    width: 15%;
+}
+
+.w20 {
+    width: 20%;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w30 {
+    width: 30%;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w45 {
+    width: 45%;
+}
+
+.w48 {
+    width: 48%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.w70 {
+    width: 70%;
+}
+
+.w80{
+    width: 80%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+/* Gap */
+.gap12{
+    gap: 12px;
+}
+
+.gap28{
+    gap: 28px;
+}
+
+/* Header */
+.headerContour{
+  background-color: red;
+  border-radius: 50px;
+}
+
+.btm{
+  background-color: blue;
+  padding: 5px;
+  border-radius: 40px;
+}
+
+
+
+/*--------------------------------------------------
+🧱Largeurs et colonnes
+---------------------------------------------------*/
+
+/*Generation des classes pour la largeur des colonnes selon 
+les resolutions d'ecrans d'apres un petit script sass*/
+:root{
+    --gap: 32px;
+}
+
+.gap{
+    gap:var(--gap);
+}
+
+/*Desktop*/
+.large-1 {
+    width: calc(8.3333333333% - 11 * var(--gap) / 12);
+  }
+  .large-2 {
+    width: calc(16.6666666667% - 5 * var(--gap) / 6);
+  }
+  .large-3 {
+    width: calc(25% - 3 * var(--gap) / 4);
+  }
+  .large-4 {
+    width: calc(33.3333333333% - 2 * var(--gap) / 3);
+  }
+  .large-5 {
+    width: calc(41.6666666667% - 1.4 * var(--gap) / 2.4);
+  }
+  .large-6 {
+    width: calc(50% - 1 * var(--gap) / 2);
+  }
+  .large-7 {
+    width: calc(58.3333333333% - 0.7142857143 * var(--gap) / 1.7142857143);
+  }
+  .large-8 {
+    width: calc(66.6666666667% - 0.5 * var(--gap) / 1.5);
+  }
+  .large-9 {
+    width: calc(75% - 0.3333333333 * var(--gap) / 1.3333333333);
+  }
+  .large-10 {
+    width: calc(83.3333333333% - 0.2 * var(--gap) / 1.2);
+  }
+  .large-11 {
+    width: calc(91.6666666667% - 0.0909090909 * var(--gap) / 1.0909090909);
+  }
+  .large-12 {
+    width: calc(100% - 0 * var(--gap) / 1);
+  }
+  
+  /*Tablets*/
+  @media all and (max-width: 700px) {
+    .medium-1 {
+      width: calc(8.3333333333% - 11 * var(--gap) / 12);
+    }
+    .medium-2 {
+      width: calc(16.6666666667% - 5 * var(--gap) / 6);
+    }
+    .medium-3 {
+      width: calc(25% - 3 * var(--gap) / 4);
+    }
+    .medium-4 {
+      width: calc(33.3333333333% - 2 * var(--gap) / 3);
+    }
+    .medium-5 {
+      width: calc(41.6666666667% - 1.4 * var(--gap) / 2.4);
+    }
+    .medium-6 {
+      width: calc(50% - 1 * var(--gap) / 2);
+    }
+    .medium-7 {
+      width: calc(58.3333333333% - 0.7142857143 * var(--gap) / 1.7142857143);
+    }
+    .medium-8 {
+      width: calc(66.6666666667% - 0.5 * var(--gap) / 1.5);
+    }
+    .medium-9 {
+      width: calc(75% - 0.3333333333 * var(--gap) / 1.3333333333);
+    }
+    .medium-10 {
+      width: calc(83.3333333333% - 0.2 * var(--gap) / 1.2);
+    }
+    .medium-11 {
+      width: calc(91.6666666667% - 0.0909090909 * var(--gap) / 1.0909090909);
+    }
+    .medium-12 {
+      width: calc(100% - 0 * var(--gap) / 1);
+    }
+  }
+  /*Smartphones*/
+  @media all and (max-width: 440px) {
+    .small-1 {
+      width: calc(8.3333333333% - 11 * var(--gap) / 12);
+    }
+    .small-2 {
+      width: calc(16.6666666667% - 5 * var(--gap) / 6);
+    }
+    .small-3 {
+      width: calc(25% - 3 * var(--gap) / 4);
+    }
+    .small-4 {
+      width: calc(33.3333333333% - 2 * var(--gap) / 3);
+    }
+    .small-5 {
+      width: calc(41.6666666667% - 1.4 * var(--gap) / 2.4);
+    }
+    .small-6 {
+      width: calc(50% - 1 * var(--gap) / 2);
+    }
+    .small-7 {
+      width: calc(58.3333333333% - 0.7142857143 * var(--gap) / 1.7142857143);
+    }
+    .small-8 {
+      width: calc(66.6666666667% - 0.5 * var(--gap) / 1.5);
+    }
+    .small-9 {
+      width: calc(75% - 0.3333333333 * var(--gap) / 1.3333333333);
+    }
+    .small-10 {
+      width: calc(83.3333333333% - 0.2 * var(--gap) / 1.2);
+    }
+    .small-11 {
+      width: calc(91.6666666667% - 0.0909090909 * var(--gap) / 1.0909090909);
+    }
+    .small-12 {
+      width: calc(100% - 0 * var(--gap) / 1);
+    }
+  }
+
+
+/*--------------------------------------------------
+✍️ Styliser du texte
+---------------------------------------------------*/
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 16px;
+ 
+    font-weight: bold;
+}
+h1{
+    font-size: 32px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 20px;
+}
+h4{
+    font-size: 16px;
+}
+
+p{
+    line-height: 1.5;
+}
+a{
+    color: var(--black);
+    text-decoration: none;
+}
+
+/*--------------------------------------------------
+🚀 Margins and paddings ... don't abuse ! 
+---------------------------------------------------*/
+.mt-64{
+    margin-top: 64px;
+}
+.mt-32{margin-top: 32px;}
+.mt-100{
+    margin-top: 100px;
+}
+.p-16{
+    padding: 16px;
+}
+/*--------------------------------------------------
+✅Boutons (rajoutez les hover de vos choix 😊)
+---------------------------------------------------*/
+.btn{
+    display: inline-block;
+   
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+   
+    border: 2px solid var(--primary);
+}
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--white);
+}
+.btn-secondary{
+    
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+.btn-disabled{
+    background-color: var(--grey);
+    color: var(--light-grey);
+    cursor: not-allowed;
+    border: 2px solid var(--grey);
+}
+
