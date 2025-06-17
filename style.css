@@ -2,6 +2,20 @@
 
 @import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
 
+@font-face {
+  font-family: 'Simple Diary';
+  src: url('assets/SimpleDiary.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Euclid Circular B'), url('https://fonts.cdnfonts.com/s/60249/Euclid Circular B Regular.woff') format('woff');
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -23,6 +37,16 @@ html {
 .flex {
     display: flex;
     flex-wrap: wrap;
+}
+
+.noWrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.column {
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .spaceBetween {
@@ -65,6 +89,15 @@ html {
 .TextRight{
     text-align: right;
 }
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
 
 
 /* MARGIN/PADDING */
@@ -127,6 +160,10 @@ html {
 
 .padding20 {
     padding: 20px;
+}
+
+.pd28 {
+  padding: 28px;
 }
 
 .padding2 {
@@ -194,6 +231,18 @@ html {
 /* Gap */
 .gap12{
     gap: 12px;
+}
+
+.gap16 {
+  gap: 16px;
+}
+
+.gap18 {
+  gap: 18px;
+}
+
+.gap20 {
+  gap: 20px;
 }
 
 .gap28{
@@ -384,13 +433,7 @@ a{
 /*--------------------------------------------------
 ✅Boutons (rajoutez les hover de vos choix 😊)
 ---------------------------------------------------*/
-.btn{
-    display: inline-block;
-    padding: 10px 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    border: 2px solid var(--primary);
-}
+
 .btn-primary{
     background-color: var(--primary);
     color: var(--white);
@@ -407,6 +450,13 @@ a{
     border: 2px solid var(--grey);
 }
 
+.divButton {
+  height: 40px;
+  width: fit-content;
+  gap: 10px;
+  padding: 20px 10px;
+}
+
 /*--------------------------------------------------
 ✅ Hero
 ---------------------------------------------------*/
@@ -415,12 +465,49 @@ header {
   position: fixed;
   width: 80%;
   left: 10%;
+  z-index: 1000;
+}
+
+.hero {
+  position: absolute;
+  top: 0%;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  align-content: center;
+  
+}
+
+.fondHero {
+  z-index: 0;
+  height: 100%;
 }
 
 .heroContainer {
   height: 100vh;
 }
 
+.telephoneHero {
+  position: absolute;
+  width: 50%;
+  top: 0%;
+  right: 5%;
+  margin-top: 5%;
+}
+
 .test {
-  background-color: rgb(210, 180, 30);
+  background-color: rgb(255, 199, 68);
+}
+
+.test2 {
+  background-color: rgb(216, 112, 27);
+}
+
+.fs24 {
+  font-size: 24px;
+}
+
+.fs64 {
+  font-size: 64px;
 }
