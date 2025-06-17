@@ -1,4 +1,5 @@
 {
     "liveshare.alwaysFollowHost": false,
+    "liveshare.followParticipants": false
 
 }
