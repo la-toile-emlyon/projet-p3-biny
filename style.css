@@ -120,6 +120,10 @@
     margin-top: 10px;
 }
 
+.top5{
+  margin-top: 5px;
+}
+
 .top10{
     margin-top: 10px;
 }
@@ -174,7 +178,19 @@
     padding: 2px;
 }
 
+.pdr40 {
+  padding-right: 40px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
 /* WIDTH */
+
+.w2{
+  width: 2%;
+}
 
 .w5{
     width: 5%;
@@ -226,6 +242,10 @@
 
 .w80{
     width: 80%;
+}
+
+.w95{
+  width: 95px;
 }
 
 .w100 {
@@ -395,7 +415,7 @@ les resolutions d'ecrans d'apres un petit script sass*/
 ✍️ Styliser du texte
 ---------------------------------------------------*/
 h1,h2,h3,h4,h5,h6{
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   font-weight: bold;
 }
 
@@ -443,6 +463,10 @@ a{
 .p-16{
     padding: 16px;
 }
+
+.mb-16 {
+  margin-bottom: 16px;
+}
 /*--------------------------------------------------
 ✅Boutons (rajoutez les hover de vos choix 😊)
 ---------------------------------------------------*/
@@ -479,6 +503,7 @@ header {
   width: 80%;
   left: 10%;
   z-index: 1000;
+  backdrop-filter: blur(6px);
 }
 
 .hero {
@@ -557,4 +582,28 @@ header {
 
 .bgNoir {
   background-color: #000000;
+}
+
+
+
+footer{
+  color: white;
+  padding: 50px 32px;
+}
+
+.socials {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.socials > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.socials img {
+  width: 30px;
+  object-fit: contain;
 }
