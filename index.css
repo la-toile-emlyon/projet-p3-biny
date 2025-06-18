@@ -40,8 +40,13 @@ p{
     background-color: rgb(244, 244, 128);
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.377);
     height: 300px;
-    padding: 5px;
+    padding: 16px;
     position: relative;
+    transform-origin: center top;
+    animation-name: sway;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 .carte::after{
@@ -56,7 +61,48 @@ p{
     left: 45%;
 }
 
+.bg-liege{
+    background-image: url('assets/Fond_liège_test_2.jpg') ;
+    background-size: contain;
+    padding: 32px 32px;
+}
+.picto{
+  width : 64px;
+}
 
 
 
+
+/* Keyframes pour le balancement */
+@keyframes sway {
+  0%   { transform: rotate(-2deg); }
+  50%  { transform: rotate(2deg); }
+  100% { transform: rotate(-2deg); }
+}
+
+/* Ajout d’un décalage aléatoire pour chaque div */
+.carte:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.carte:nth-child(2) {
+  animation-delay: 1.5s;
+}
+
+.carte:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.nombre{
+  font-family: 'Simple Diary';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  width: 64px;
+  color :#fff;
+  background-color: #000;
+  margin-right: 16px;
+  border-radius: 64px;
+}
 

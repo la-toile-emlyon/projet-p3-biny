@@ -38,6 +38,15 @@ p{
   width: fit-content;
 }
 
+/* Hero */
+.hero{
+    background-image: url(assets/Fond_liège_test_2.jpg);
+     height: 87vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+
 /* Sommaire */
 
 .carte{
@@ -54,8 +63,30 @@ p{
 
 
 
+.w75{
+  width: 70%;
+}
 
 
+.w25{
+  width: 25%;
+}
+.w50{
+  width: 50%;
+}
 
+.div128{
+  height: 128px;
+}
 
+section{
+  margin-top: 100px;
+  p{
+    font-size: 16px;
+  }
+}
 
+.menu{
+  position: sticky;
+  top: 128px;
+}

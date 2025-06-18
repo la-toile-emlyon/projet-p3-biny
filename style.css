@@ -16,10 +16,6 @@
     src: local('Euclid Circular B'), url('https://fonts.cdnfonts.com/s/60249/Euclid Circular B Regular.woff') format('woff');
 }
 
-html {
-  height: 100%;
-  width: 100%;
-}
 
 /* Reset */
 * {
@@ -140,6 +136,14 @@ html {
     margin-top: 40px;
 }
 
+.top50 {
+  margin-top: 50px;
+}
+
+.topHalf {
+  margin-top: 50%;
+}
+
 .top100 {
     margin-top: 100px;
 
@@ -249,6 +253,10 @@ html {
     gap: 28px;
 }
 
+.footer{
+background-color: black;
+color: white;
+}
 
 
 /*--------------------------------------------------
@@ -530,6 +538,14 @@ header {
   height: 100%;
 }
 
+.vh25 {
+  height: 25vh;
+}
+
+.vh75 {
+  height: 75vh;
+}
+
 .vh50 {
   height: 50vh;
 }
@@ -537,4 +553,8 @@ header {
 .fullSize {
   height: 100%;
   width: 100%;
+}
+
+.bgNoir {
+  background-color: #000000;
 }
