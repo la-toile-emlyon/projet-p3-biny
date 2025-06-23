@@ -38,22 +38,21 @@
   </div>
 
 
-  <main class="flex spaceBetween top100">
+  <main class="flex spaceBetween top100 pb-32">
 
     <div class="w20 marginLeft50 pb-16">
       <aside class="menu">
         <nav class="carteAside">
           <h2 class="textCenter">Sommaire</h2>
           <ul>
-            <li class="top5"><a href="">Contexte</a></li>
-            <li class="top5"><a href="">Persona</a></li>
-            <li class="top5"><a href="">Problématique</a></li>
-            <li class="top5"><a href="">Concept</a></li>
-            <li class="top5"><a href="">User Flow</a></li>
-            <li class="top5"><a href="">La solution</a></li>
-            <li class="top5"><a href="">Prototype</a></li>
-            <li class="top5"><a href="">Test utilisateur</a></li>
-            <li class="top5"><a href="">Perspectives d’évolution</a></li>
+            <li class="top5"><a href="#contexte">Contexte</a></li>
+            <li class="top5"><a href="#persona">Persona</a></li>
+            <li class="top5"><a href="#problématique">Problématique</a></li>
+            <li class="top5"><a href="#concept">Concept</a></li>
+            <li class="top5"><a href="#UserFlow">User Flow</a></li>
+            <li class="top5"><a href="#prototype">Prototype</a></li>
+            <li class="top5"><a href="#TestUtilisateur">Test utilisateur</a></li>
+            <li class="top5"><a href="#perspectives">Perspectives d’évolution</a></li>
           </ul>
         </nav>
       </aside>
@@ -67,7 +66,7 @@
       <!-- Context + Personna -->
       <div class="flex">
 
-        <section class="w60">
+        <section class="w60" id="contexte">
           <h2>Contexte</h2>
           <div class="w80">
             <p class="fs24">Biny est une application sociale, qui vient en réponse à une éruption des problèmes liés à la gestion des
@@ -82,7 +81,7 @@
           </div>
         </section>
 
-        <section class="w40">
+        <section class="w40" id="persona">
           <h2>Persona</h2>
           <div>
             <img src="assets/Personna.png" alt="Thomas Andrée">
@@ -92,27 +91,27 @@
       </div>
 
       <!-- Section Problèmatique, Le concept, UserFlow -->
-      <section class="w80">
+      <section class="w80"  id="problématique">
 
         <div>
-          <h2 class="textCenter">Problématique</h2>
-          <p class="fs24 textCenter">Comment faciliter la coordination entre Thomas et les autres locataires pour éviter que les déchets
+          <h2>Problématique</h2>
+          <p class="fs24">Comment faciliter la coordination entre Thomas et les autres locataires pour éviter que les déchets
             s'accumulent à l'entrée de l’immeuble ? </p>
         </div>
       </section>
 
-      <section class="w80">
+      <section class="w80"  id="concept">
         <div>
-          <h2 class="textCenter">Le concept</h2>
-          <p class="fs24 textCenter">Un service numérique type application tableau collaboratif, permettant aux habitants de s’organiser
+          <h2>Le concept</h2>
+          <p class="fs24">Un service numérique type application tableau collaboratif, permettant aux habitants de s’organiser
             collectivement autour de la gestion et valorisation des déchets à trois échelles – l’immeuble, le quartier
             et la ville.</p>
         </div>
       </section>
 
       <section class="w80">
-        <div>
-          <h2 class="textCenter">User flow</h2>
+        <div id="UserFlow">
+          <h2>User flow</h2>
           <img src="assets/UserFlow.png" alt="UserFlow" class="w100">
         </div>
       </section>
@@ -126,15 +125,15 @@
           <div class="flex gap28 alignCenter">
             <div class="w30">
               <img src="assets/LowFi1.png" alt="" class="w100">
-              <p>Légende</p>
+              <p>Pages Immeuble/Quartier/Annonce</p>
             </div>
             <div class="w30">
               <img src="assets/LowFi2.png" alt="" class="w100">
-              <p>Légende</p>
+              <p>Page ville</p>
             </div>
             <div class="w30">
               <img src="assets/LowFi3.png" alt="" class="w100">
-              <p>Légende</p>
+              <p>Low fidelity V1</p>
             </div>
           </div>
 
@@ -154,38 +153,38 @@
             <div class="swiper-slide">
               <div>
                 <img src="assets/MidFi1.png" alt="">
-                <p>légende</p>
+                <p>Acceuil immeuble</p>
               </div>
             </div>
             <div class="swiper-slide">
               <div>
                 <img src="assets/MidFi2.png" alt="">
-                <p>légende</p>
+                <p>Acceuil quartier</p>
               </div>
             </div>
             <div class="swiper-slide">
               <div>
                 <img src="assets/MidFi3.png" alt="">
-                <p>légende</p>
+                <p>Acceuil ville</p>
               </div>
 
             </div>
             <div class="swiper-slide">
               <div>
                 <img src="assets/MidFi4.png" alt="">
-                <p>légende</p>
+                <p>Création annonce</p>
               </div>
             </div>
             <div class="swiper-slide">
               <div>
                 <img src="assets/MidFi5.png" alt="">
-                <p>légende</p>
+                <p>Prévisualisation annonce</p>
               </div>
             </div>
             <div class="swiper-slide">
               <div>
                 <img src="assets/MidFi6.png" alt="">
-                <p>légende</p>
+                <p>Profil</p>
               </div>
             </div>
             ...
@@ -207,7 +206,7 @@
       </section>
 
       <!-- Prototype -->
-      <section>
+      <section id="prototype">
         <h2 class="mb-16">Le prototype</h2>
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
           src="https://embed.figma.com/proto/ejafJ8QHN3T8gBHipPiqYf/Biny---Alan--Elio--Ryann?node-id=4967-3043&scaling=scale-down&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=4967%3A3043&show-proto-sidebar=1&embed-host=share"
@@ -215,9 +214,9 @@
       </section>
 
       <!-- Text Utilisateur -->
-      <section class="">
+      <section id="TestUtilisateur">
         <h2 class="mb-16" >Tests utilisateurs</h2>
-        <div class="flex test alignCenter">
+        <div class="flex alignCenter">
           <div class="w50">
             <p>Retour n°1 : Des utilisateurs nous ont fait la remarque qu'ils ne savaient pas a quoi servait les
               boutons, on a donc écrit leur fonctionnalité juste en dessous pour une meilleure compréhension des
@@ -258,7 +257,7 @@
 
       </section>
       <!-- Section Perspectives d’évolution -->
-      <section>
+      <section id="perspectives">
         <h2 class="mb-16">Perspectives d’évolution</h2>
         <p>Voici les différentes perspectives d'évolutions que nous prévoyons de faire pour améliorer notre application :</p>
         <ul>
@@ -271,7 +270,7 @@
           </li>
 
           <li>
-            - Ajoutez des catégories visibles sur les post-it pour permettre au filtres de mieux filtrer les posts-it et permettre d'ajouter automatiquement ces catégories à la création de posts-it en fonction
+            - Ajoutez des catégories visibles sur les post-it pour permettre au filtres de mieux filtrer les posts-it et permettre d'ajouter automatiquement ces catégories à la création de posts-it ;
           </li>
 
           <li>
@@ -294,8 +293,8 @@
     <div class="flex container">
 
       <div class="w60">
-        <p>Lorem ipsum dolor </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+        <p>Nous contacter</p>
+        <p>Copyright © Biny</p>
       </div>
 
       <div class="w40 flex noWrap socials">

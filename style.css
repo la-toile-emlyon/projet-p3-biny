@@ -182,8 +182,16 @@
   padding-right: 40px;
 }
 
+.pdr10 {
+  padding-right: 10px;
+}
+
 .pb-16 {
   padding-bottom: 16px;
+}
+
+.pb-32 {
+  padding-bottom: 32px;
 }
 
 /* WIDTH */
@@ -423,6 +431,10 @@ h1{
   font-size: 32px;
 }
 
+.h1{
+   font-family: 'Euclid Circular B';
+}
+
 h2{
   font-size: 40px;
 }
@@ -437,7 +449,7 @@ h4{
 
 p{
   line-height: 1.5;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 a{
@@ -466,6 +478,10 @@ a{
 
 .mb-16 {
   margin-bottom: 16px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
 }
 /*--------------------------------------------------
 ✅Boutons (rajoutez les hover de vos choix 😊)
