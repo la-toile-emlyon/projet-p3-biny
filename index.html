@@ -1,16 +1,309 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Projet - Page d'accueil</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    <script src="script.js" type="text/javascript"></script>
-  </head>
 
-  <body>
-    Accueil
-    <a href="/doc.html">Documentation</a>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Biny - Page d'accueil</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.cdnfonts.com/css/euclid-circular-b" rel="stylesheet">
+  <script src="script.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+
+
+  <!-- Header - Alan -->
+  <header class="flex spaceBetween textCenter alignCenter headerContour top20 pd28">
+    <a href="">
+      <img src="assets/Logo Biny Dark.png" alt="Logo de biny" width="50%">
+    </a>
+
+    <nav>
+      <ul class="flex gap28 alignCenter">
+        <li><a href="" class="divButton">Accueil</a></li>
+        <li><a href="doc.html" class="divButton">Documentation</a></li>
+        <li><a href="" class="btn">Télécharger l'app</a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- Hero - Ryann -->
+    <section class="heroContainer justifyCenter">
+
+      <img src="assets/Fond_liège_test_2.jpg" alt="Fond de tableau" class="fondHero w100">
+
+      <div class="hero flex">
+
+
+        <div class="container w100 flex">
+
+          <div class="w50 flex column gap28">
+
+            <h1 class="fs64 h1">L'application de communication entre voisins</h1>
+
+
+
+            <div class="noWrap w50 gap12">
+
+              <a href=""><img src="assets/Téléchargement_apple_store.png" alt="" class="w100"></a>
+              <a href=""><img src="assets/Téléchargement_google_store.png" alt="" class="w100"></a>
+
+            </div>
+
+
+          </div>
+
+          <div class="w40">
+            <img src="assets/PhotoHeroTel.png" alt="" class="telephoneHero">
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+    </section>
+
+    <!-- Contexte -  Elio -->
+    <section class="container top100">
+
+      <!-- Grande div pour flex -->
+      <div class="flex alignCenter spaceBetween top20">
+
+        <!-- Partie gauche -->
+        <div class="w40 pdr10 ">
+          <h2 class="fs64">L'histoire de Biny</h2>
+
+          <p class="fs24 pb-16 top50">Biny est une application sociale, qui vient en réponse à une éruption des
+            problèmes liés
+            à la
+            gestion des déchets dans les immeubles urbains.</p>
+
+          <p class="fs24">L'application cible principalement les grandes villes de France, notamment les immeubles
+            d'habitation en copropriété ou en location collective, où les problèmes de gestion de déchets sont fréquents
+            dans les parties communes.</p>
+        </div>
+
+        <!-- Partie droite -->
+        <div class="image-grid large-7">
+
+          <div>
+
+            <div class="flex gap">
+
+              <div class="large-6 flex gap">
+
+                <div class="large-12 height-6">
+                  <img src="assets/Encombrants1_canapé_Contexte.webp" alt="" class="large-12">
+                </div>
+                <div class="large-12 height-6">
+                  <img src="assets/Encombrants2_autres_Contexte.jpg" alt="" class="large-12">
+                </div>
+
+              </div>
+              <div class="large-6">
+                <img src="assets/Poubelles_dans_rue_1.jpg" alt="" class="large-12">
+              </div>
+              <div class="green large-12">
+                <img src="assets/Poubelles_dans_rue_2.jpg" alt="" class="large-12">
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Pourquoi choisir BINY - Alan -->
+    <div class="bg-liege top100">
+
+      <section class="w100 container ptb64">
+
+        <div>
+
+          <h2>Pourquoi choisir Biny ?</h2>
+
+          <div class="flex spaceAround top20">
+
+            <div class="carte flex alignCenter justifyCenter w30">
+              <img src="assets/icons8-picking-up-100.png" alt="" class="picto">
+              <p>Moins de déchets, plus de respect.</p>
+            </div>
+
+            <div class="carte flex alignCenter justifyCenter w30">
+              <img src="assets/icons8-neighbor-100.png" alt="" class="picto">
+              <p>Pour un immeuble propre, ensemble.</p>
+            </div>
+
+            <div class="carte flex alignCenter justifyCenter w30">
+              <img src="assets/icons8-cleaning-100.png" alt="" class="picto">
+              <p>Agir localement, changer durablement.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- Comment ça marche -->
+    <section class="top100 container">
+
+
+      <div class="flex spaceBetween alignCenter">
+        <img src="assets/Fonctio1.png" alt="" class="w30">
+        <div class="w60">
+
+          <div class="flex mb-16">
+            <div class="nombre">1</div>
+            <h3 class="flex alignCenter">
+              Rédige une annonce
+            </h3>
+          </div>
+
+          <p class="">Personnalise tes annonces pour communiquer sans limites</p>
+          <div class="flex gap18 mt-16">
+            <img src="assets/IconeCCF1.png" alt="" width="50%">
+          </div>
+        </div>
+      </div>
+
+      <!-- ////////////////////////////////////////////////////// -->
+
+      <div class="flex spaceBetween alignCenter">
+        
+        <div class="w60">
+
+          <div class="flex mb-16">
+            <div class="nombre">2</div>
+            <h3 class="flex alignCenter largeurh3">
+              Consultez les annonces de votre immeuble, de votre quartier ou de votre ville
+            </h3>
+          </div>
+
+          <p class="">Ne loupez aucune annonce</p>
+          <div class="flex gap18 mt-16">
+            <img src="assets/IconeCCF2.png" alt="" width="50%">
+          </div>
+          
+        </div>
+        <img src="assets/Fonctio2.png" alt="" class="w30">
+      </div>
+
+
+      <!-- ////////////////////////////////////////////////////// -->
+
+      <div class="flex spaceBetween alignCenter">
+        <img src="assets/PhoneLike.png" alt="" class="w30">
+        <div class="w60">
+
+          <div class="flex mb-16">
+            <div class="nombre">3</div>
+            <h3 class="flex alignCenter">
+              Like et commente !
+            </h3>
+          </div>
+
+          <p class="">Interagissez avec tout votre voisinage et plus encore</p>
+          <div class="flex gap18 mt-16">
+            <!-- <img src="assets/LikeComente.png" alt="" width="50%"> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="flex spaceBetween alignCenter">
+        <img src="assets/Fonctio2.png" alt="" class="w30">
+        <div class="w60">
+          <h3 class="flex alignCenter"><div class="nombre">3</div>Like et partage</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptate animi inventore molestias veniam omnis, provident aliquid eius quasi repudiandae obcaecati placeat? Totam impedit eius tempora quasi porro vel eveniet.</p>
+         
+        </div>
+      </div> -->
+
+    </section>
+
+    <!-- Avis client -->
+
+    <div class="bg-liege justifyCenter">
+
+      <section class="w100 container ptb64">
+
+        <div>
+
+          <h2>Ils ont téléchargé Biny</h2>
+
+          <div class="flex spaceAround top50">
+
+            <div class="carte flex justifyCenter w30">
+              <h4 class="fs24">Luis Enrique</h4>
+              <p>"L’appli est intuitive : ça reprends les code de base des applications"</p>
+            </div>
+
+            <div> </div>
+
+            <div class="carte flex justifyCenter w30">
+              <h4 class="fs24">Emilie Longchamp</h4>
+              <p>"La navigation est incroyablement fluide"</p>
+            </div>
+
+            <div> </div>
+
+            <div class="carte flex justifyCenter w30">
+              <h4 class="fs24">Philipe Legrand</h4>
+              <p>“ J'adore la fonction anonyme sur la création de post-it, je recommande vraiment.“.</p>
+
+              <div> </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </section>
+    </div>
+
+
+
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bgNoir">
+
+    <img src="assets/Logo Biny Light.png" alt="">
+    <!-- Nous contacter -->
+    <div class="flex container">
+
+      <div class="w60">
+        <p>Nous contacter</p>
+        <p>Copyright © Biny</p>
+      </div>
+
+      <div class="w40 flex noWrap socials">
+        <div>
+          <a href=""><img src="assets/Youtube.png" alt=""></a>
+          <a href=""><img src="assets/linkedin.png" alt=""></a>
+          <a href=""><img src="assets/Facebook.png" alt=""></a>
+          <a href=""><img src="assets/Github.png" alt=""></a>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+</body>
+
 </html>

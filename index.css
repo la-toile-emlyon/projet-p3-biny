@@ -1,1 +1,150 @@
-/* Le code CSS spécifique à la page d'accueil */
+h1{
+  font-family: 'Simple Diary';
+}
+
+h2{
+  font-family: 'Simple Diary';
+}
+
+h3{
+  font-family: 'Simple Diary';
+  font-size: 40px;
+}
+
+h4{
+  font-family: 'Simple Diary';
+}
+
+p{
+  font-family: 'Euclid Circular B';
+}
+
+/* Header */
+.headerContour{
+  border-radius: 50px;
+  background-color: #f2f2f7ac;
+  padding: 10px;
+}
+
+.btn{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 20px 12px;
+  border-radius: 40px;
+  font-size: 16px;
+  width: fit-content;
+}
+
+/* Section Choisir Biny */
+
+.carte{
+    background-color: rgb(244, 244, 128);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.377);
+    height: 300px;
+    padding: 16px;
+    position: relative;
+    transform-origin: center top;
+    animation-name: sway;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.carte::after{
+    content:"";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url('./assets/punaise.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top:-15px;
+    left: 45%;
+}
+
+.bg-liege{
+    background-image: url('assets/Fond_liège_test_2.jpg') ;
+    background-size: contain;
+    padding: 32px 32px;
+}
+.picto{
+  width : 64px;
+}
+
+/*commmentaire*/
+
+
+/* Keyframes pour le balancement */
+@keyframes sway {
+  0%   { transform: rotate(-2deg); }
+  50%  { transform: rotate(2deg); }
+  100% { transform: rotate(-2deg); }
+}
+
+/* Ajout d’un décalage aléatoire pour chaque div */
+.carte:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.carte:nth-child(2) {
+  animation-delay: 1.5s;
+}
+
+.carte:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.nombre{
+  font-family: 'Simple Diary';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  color :#fff;
+  background-color: #000;
+  margin-right: 16px;
+  border-radius: 64px;
+}
+
+
+/* Histoire de biny */
+.image-grid img {
+  width: 100%;
+  height: 100%;
+}
+
+.green {
+  background-color: green;
+  height: 200px;
+}
+
+.blue {
+  background-color: blue;
+  height: 400px;
+}
+
+.yellow {
+  background-color: yellow;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.yellow img {
+  height: 200px;
+}
+
+.red {
+  background-color: red;
+  height: 100%;
+}
+
+
+.image-grid img{
+  object-fit: cover !important;
+}
+
+.largeurh3{
+  width: calc(100% - 64px);
+} 

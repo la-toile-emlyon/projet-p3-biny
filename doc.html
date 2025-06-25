@@ -1,15 +1,314 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Projet - Documentation</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="doc.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
-    <a href="/index.html">Accueil</a>
-    Documentation
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Biny - Documentation</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="doc.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+  <header class="flex spaceBetween textCenter alignCenter headerContour top20 pd28">
+    <a href="">
+      <img src="assets/Logo Biny Dark.png" alt="Logo de biny" width="50%">
+    </a>
+
+    <nav>
+      <ul class="flex gap28 alignCenter">
+        <li><a href="index.html" class="divButton">Accueil</a></li>
+        <li><a href="doc.html" class="divButton">Documentation</a></li>
+        <li><a href="" class="btn">Télécharger l'app</a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <div class="herodoc">
+    <div class="herodocContent">
+      <h2 class="h2Doc">Documentation</h2>
+      <h1 class="h1">Tout savoir sur la conception de Biny, la solution pour communiquer librement avec ses voisins.</h1>
+    </div>
+
+  </div>
+
+
+  <main class="flex spaceBetween top100 pb-32">
+
+    <div class="w20 marginLeft50 pb-16">
+      <aside class="menu">
+        <nav class="carteAside">
+          <h2 class="textCenter">Sommaire</h2>
+          <ul>
+            <li class="top5"><a href="#contexte">Contexte</a></li>
+            <li class="top5"><a href="#persona">Persona</a></li>
+            <li class="top5"><a href="#problématique">Problématique</a></li>
+            <li class="top5"><a href="#concept">Concept</a></li>
+            <li class="top5"><a href="#UserFlow">User Flow</a></li>
+            <li class="top5"><a href="#prototype">Prototype</a></li>
+            <li class="top5"><a href="#TestUtilisateur">Test utilisateur</a></li>
+            <li class="top5"><a href="#perspectives">Perspectives d’évolution</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+
+
+
+    <!-- Tout le contenue de droite -->
+    <div class="w75 padding20">
+
+      <!-- Context + Personna -->
+      <div class="flex">
+
+        <section class="w60" id="contexte">
+          <h2>Contexte</h2>
+          <div class="w80">
+            <p class="fs24">Biny est une application sociale, qui vient en réponse à une éruption des problèmes liés à la gestion des
+              déchets dans les immeubles urbains. Elle intervient dans un contexte où les Résidents/Proprios cherchent à
+              renforcer la propreté et la participation citoyenne à l’échelle locale.</p>
+            <div class="top100">
+              <p class="fs24">L'application cible principalement les grandes villes de France, notamment les immeubles d'habitation
+                en
+                copropriété ou en location collective, où les problèmes de gestion de déchets sont fréquents dans les
+                parties communes.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="w40" id="persona">
+          <h2>Persona</h2>
+          <div>
+            <img src="assets/Personna.png" alt="Thomas Andrée">
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Section Problèmatique, Le concept, UserFlow -->
+      <section class="w80"  id="problématique">
+
+        <div>
+          <h2>Problématique</h2>
+          <p class="fs24">Comment faciliter la coordination entre Thomas et les autres locataires pour éviter que les déchets
+            s'accumulent à l'entrée de l’immeuble ? </p>
+        </div>
+      </section>
+
+      <section class="w80"  id="concept">
+        <div>
+          <h2>Le concept</h2>
+          <p class="fs24">Un service numérique type application tableau collaboratif, permettant aux habitants de s’organiser
+            collectivement autour de la gestion et valorisation des déchets à trois échelles – l’immeuble, le quartier
+            et la ville.</p>
+        </div>
+      </section>
+
+      <section class="w80">
+        <div id="UserFlow">
+          <h2>User flow</h2>
+          <img src="assets/UserFlow.png" alt="UserFlow" class="w100">
+        </div>
+      </section>
+
+
+      <!-- Section Selection -->
+      <section>
+        <div>
+          <!-- <h2>La solution</h2> -->
+          <h2>Low fidelity</h2>
+          <div class="flex gap28 alignCenter">
+            <div class="w30">
+              <img src="assets/LowFi1.png" alt="" class="w100">
+              <p>Pages Immeuble/Quartier/Annonce</p>
+            </div>
+            <div class="w30">
+              <img src="assets/LowFi2.png" alt="" class="w100">
+              <p>Page ville</p>
+            </div>
+            <div class="w30">
+              <img src="assets/LowFi3.png" alt="" class="w100">
+              <p>Low fidelity V1</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section Fedility -->
+      <section>
+        <h2 class="mb-16">Mid fidelity</h2>
+
+        <!-- Carousel swiper -->
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div>
+                <img src="assets/MidFi1.png" alt="">
+                <p>Acceuil immeuble</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="assets/MidFi2.png" alt="">
+                <p>Acceuil quartier</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="assets/MidFi3.png" alt="">
+                <p>Acceuil ville</p>
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="assets/MidFi4.png" alt="">
+                <p>Création annonce</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="assets/MidFi5.png" alt="">
+                <p>Prévisualisation annonce</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="assets/MidFi6.png" alt="">
+                <p>Profil</p>
+              </div>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+
+
+        <!-- Fin du carousel -->
+
+      </section>
+
+      <!-- Prototype -->
+      <section id="prototype">
+        <h2 class="mb-16">Le prototype</h2>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+          src="https://embed.figma.com/proto/ejafJ8QHN3T8gBHipPiqYf/Biny---Alan--Elio--Ryann?node-id=4967-3043&scaling=scale-down&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=4967%3A3043&show-proto-sidebar=0&embed-host=share"
+          allowfullscreen></iframe>
+      </section>
+
+      <!-- Text Utilisateur -->
+      <section id="TestUtilisateur">
+        <h2 class="mb-16" >Tests utilisateurs</h2>
+        <div class="flex alignCenter">
+          <div class="w50">
+            <p>Retour n°1 : Des utilisateurs nous ont fait la remarque qu'ils ne savaient pas a quoi servait les
+              boutons, on a donc écrit leur fonctionnalité juste en dessous pour une meilleure compréhension des
+              nouveaux utilisateurs.</p>
+            <div class="flex gap12">
+              <div class="w40">
+                <img src="assets/Navbar_Side_Avant.png" alt="" class="w50">
+              </div>
+              <div class="w40">
+                <img src="assets/Navbar_Side_Après.png" alt="" class="w50">
+              </div>
+            </div>
+          </div>
+
+          <div class="w50">
+            <p>Retour n°2 : On nous a fait la remarque qu'il n'y avait que des post-its en mode anonyme et qu'il manquait des post-its en non anonyme. On a donc rajouter ça.</p>
+            <div class="flex">
+              <div class="w50">
+                <img src="assets/Post-it_Anonyme.png" alt="" class="w100">
+              </div>
+              <div class="w50">
+                <img src="assets/Post-it_non-Anonyme.png" alt="" class="w100">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justifyCenter top50">
+          <div>
+            <p>Retour n°3 : Modification des filtres, on a rendu les filtres plus gros car ils ne se voyaient pas assez et on a améliorer le contraste quand on sélectionne un filtre</p>
+            <div class="flex justifyCenter gap28">
+              <img src="assets/Filtres_Avant.png" alt="" class="w50">
+              <img src="assets/Filtres_Après.png" alt="" class="w50">
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+      <!-- Section Perspectives d’évolution -->
+      <section id="perspectives">
+        <h2 class="mb-16">Perspectives d’évolution</h2>
+        <p>Voici les différentes perspectives d'évolutions que nous prévoyons de faire pour améliorer notre application :</p>
+        <ul>
+          <li>
+            - Ajoutez de nouveaux modules tel qu'un module pour faire des vocaux etc. ;
+          </li>
+
+          <li>
+            - Ajoutez une catégorie dans le profil pour voir tout nos likes ;
+          </li>
+
+          <li>
+            - Ajoutez des catégories visibles sur les post-it pour permettre au filtres de mieux filtrer les posts-it et permettre d'ajouter automatiquement ces catégories à la création de posts-it ;
+          </li>
+
+          <li>
+            - Améliorer le système de filtres en ajoutant plus de filtres ;
+          </li>
+
+        </ul>
+      </section>
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="doc.js" defer></script>
+
+   <footer class="bgNoir">
+
+    <img src="assets/Logo Biny Light.png" alt="">
+    <!-- Nous contacter -->
+    <div class="flex container">
+
+      <div class="w60">
+        <p>Nous contacter</p>
+        <p>Copyright © Biny</p>
+      </div>
+
+      <div class="w40 flex noWrap socials">
+        <div>
+            <a href=""><img src="assets/Youtube.png" alt=""></a>
+            <a href=""><img src="assets/linkedin.png" alt=""></a>
+            <a href=""><img src="assets/Facebook.png" alt=""></a>
+            <a href=""><img src="assets/Github.png" alt=""></a>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+</body>
+
 </html>
